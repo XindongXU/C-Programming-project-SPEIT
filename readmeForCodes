@@ -1,0 +1,37 @@
+CS139 C Programming Project
+Written by Xindong XU
+December 14, 2020
+
+Part 1 - Basic Definition
+This is a database designed for the Pokémon, which is large enough to store all the existent Pokémons (at most 898 different kinds of Pokémons) and can help you to realize several functions introduced below.
+
+Part 2 - Functions
+1. The insertion of a new Pokémon into the database which is empty at the very first;
+2. The deletion of a Pokémon which has been stored in the database;
+3. The comparison the height of all the Pokémons stored in the database, and the output of names of the highest and the shortest Pokémons;
+4. The sorting of the database, according to either the id-ascending order or the id-descending order;
+5. The recognition of the types of all the Pokémons stored in the database and the searching of all the Pokémons with a certain type;
+6. The output of all the detailed information of a given Pokémon stored in the database;
+
+Part 3 - Instruction
+First of all,  enter the number of functions you would like to realize. 
+Then please enter the enumerations and the parameters of the functions to realize:
+1 represents insert a Pokémon to the database, its id, name, height, type should be given in order;
+2 represents delete a Pokémon, its id should be given;
+3 represents find Pokémons with maximal height or minimal height in the database, enter 3 1 to print the max, enter 3 2 to print min;
+4 represents sorting the database with id-ascending order;
+5 1 represents sorting the database with id-ascending order, 5 1 represents sorting the database with id-descending order;
+6 type(to be given) represents printing the name of all the Pokémons belonging to the given type;
+7 name(to be given) represents printing all the information of a given Pokémon, if it has been recorded in the database;
+
+Part 4 - Description of the Functions
+1. insert(int id_temp, char* name_temp, float height_temp, char* type_temp), add a new pokemon, with its id of id_temp, its height of height, its name of name_type, and its type of type_temp (if it has 2 type, they should be entered in the form of: type1, type2) into the database; Return 0 if successful. Return 1 if the max size of the database is exceeded;
+2. delete_id(int id_temp), delete the Pokémon of given id from the database; Return 0 and "Deleted successfully!" will be printed if successful; Return 1 and " Pokémon with its id of id_temp doesn't exist in the database" will be printed if the Pokémon of given id doesn't exist in the database;
+3. find_height(int param), with the value to be given param ∈ {1, 2};  The names of Pokémons with maximum height (param=1) or the names with minimum height (param = 2) will be printed;
+4. sort_id(), the database will be sorted with id-ascending order, and all Pokémon names will be printed in order;
+5. sort_id_plus(int param), with the value to be given param ∈ {1, 2}; The database will be sorted with id-ascending order (param=1), and all Pokémon names will be printed in order; The database will be sorted with id-descending order (param=2), and all Pokémon names will be printed in order;
+6. group(char* type), the name of all the Pokémons belonging to the given type will be printed;
+7. free_design(char* name), the detailed information of a given Pokémon will be printed, including its id, types, average height of its species, and its usual habitat; Entering the name of the Pokémon either beginning with a capital or a minuscule will work;
+
+Input and Output
+There’s a sample of input and output in the appendix. Each instruction and its output is aligned.
