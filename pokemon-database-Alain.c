@@ -78,7 +78,7 @@ int delete_id(int id_temp){
 	
 	if(index == maxsize){
 		res = 1;
-		printf("Pokemon of id %d doesn¡¯t exist in the database.\n", id_temp);
+		printf("Pokemon of id %d doesnÂ¡Â¯t exist in the database.\n", id_temp);
 	}else{
 //		free(pkdb[index].name);
 //		free(pkdb[index].type);
